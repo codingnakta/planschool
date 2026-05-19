@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npm create *)",
+      "Bash(powershell -Command \"Move-Item -Path '_vite_tmp\\\\*' -Destination '.' -Force; Move-Item -Path '_vite_tmp\\\\.*' -Destination '.' -Force -ErrorAction SilentlyContinue; Remove-Item '_vite_tmp' -Recurse -Force\")",
+      "Bash(npm install *)",
+      "Bash(timeout 12 npm run dev)",
+      "Bash(npm run *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(rm Home.jsx)",
+      "Bash(mkdir -p widgets)",
+      "Bash(type nul *)",
+      "Bash(touch widgets/.gitkeep)",
+      "Bash(git status *)",
+      "Bash(powershell -Command \"Get-ChildItem -Path 'src' -Recurse -File | Sort-Object LastWriteTime -Descending | Select-Object -First 12 FullName,LastWriteTime | Format-Table -Auto\")"
+    ]
+  }
+}
