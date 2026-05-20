@@ -1,6 +1,7 @@
-import AppLayout from '../layouts/AppLayout'
-import Cell from '../components/Cell'
-import Profile from '../widgets/Profile'
+import AppLayout from "../layouts/AppLayout";
+import Cell from "../components/Cell";
+import Profile from "../widgets/Profile";
+import NowTime from "../widgets/NowTime";
 
 function Home() {
   return (
@@ -9,7 +10,9 @@ function Home() {
       <Cell>
         <Profile />
       </Cell>
-      <Cell>Top-2 (2fr)</Cell>
+      <Cell>
+        <NowTime />
+      </Cell>
       <Cell>Top-3 (2fr)</Cell>
       <Cell>Top-4 (1fr)</Cell>
 
@@ -19,7 +22,7 @@ function Home() {
       <Cell>3 (2fr)</Cell>
       <Cell>4 (1fr)</Cell>
     </AppLayout>
-  )
+  );
 }
 
-export default Home
+export default Home;
