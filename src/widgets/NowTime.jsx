@@ -27,9 +27,9 @@ export default function NowTime() {
       <p className="font-medium text-xl mt-2 ml-2">{dateStr}</p>
       <div className="flex items-center gap-3 mt-4 ml-2">
         <span className="text-sm font-medium whitespace-nowrap">출근 {pad(START_HOUR)}:00</span>
-        <div className="flex-1 h-3 bg-white/20 rounded-full overflow-hidden">
+        <div className="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
           <div
-            className="h-full bg-white rounded-full transition-all duration-1000"
+            className="h-full bg-gray-500 rounded-full transition-all duration-1000"
             style={{ width: `${progress}%` }}
           />
         </div>
